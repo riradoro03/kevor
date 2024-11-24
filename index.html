@@ -1,281 +1,197 @@
 <html lang="en">
- <head>
-  <meta charset="utf-8"/>
-  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-  <title>
-   KEVOR eCar
-  </title>
-  <script src="https://cdn.tailwindcss.com">
-  </script>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
-  <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
-  <style>
-   body {
-            font-family: 'Teko', sans-serif;
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KEVOR eCar</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300;400;500;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
         }
         .hero-bg {
             background-image: url('https://placehold.co/1920x1080?text=KEVOR+eCar+Hero+Image&bg=fbc304&text_color=ffffff');
             background-size: cover;
             background-position: center;
         }
-  </style>
- </head>
- <body class="bg-gray-100 text-gray-900">
-  <!-- Header -->
-  <header class="bg-white shadow">
-   <div class="container mx-auto px-6 py-3 flex justify-between items-center">
-    <a href="#">
-    <img src="logo.png" alt="KEVOR eCar logo" class="w-12 h-12">
-    </a>
-    <nav class="flex space-x-4 items-center">
-     <a class="text-gray-700 hover:text-yellow-500" href="#">
-      Home
-     </a>
-     <a class="text-gray-700 hover:text-yellow-500" href="#configure">
-      Configure
-     </a>
-     <a class="text-gray-700 hover:text-yellow-500" href="#purchase">
-      Purchase
-     </a>
-     <a class="text-gray-700 hover:text-yellow-500" href="#contact">
-      Contact Us
-     </a>
-    </nav>
-   </div>
-  </header>
-  <!-- Hero Section -->
-  <section class="hero-bg h-screen flex items-center justify-center text-center text-white">
-   <div>
-    <h1 class="text-5xl md:text-7xl font-bold">
-     Korean revolution, far beyond evolution
-    </h1>
-    <a class="mt-8 inline-block bg-yellow-500 text-white py-3 px-6 rounded-full text-xl hover:bg-yellow-600 transition" href="#configure">
-     Configure Your KEVOR eCar
-    </a>
-   </div>
-  </section>
-  <!-- Configuration Page -->
-  <section class="container mx-auto px-6 py-12" id="configure">
-   <h2 class="text-4xl font-bold text-center text-yellow-500 mb-8">
-    Configure Your KEVOR eCar
-   </h2>
-   <div class="bg-white p-8 rounded-lg shadow-lg">
-    <form id="configForm">
-     <div class="mb-6">
-      <label class="block text-gray-700" for="color">
-       Choose Color:
-      </label>
-      <select class="w-full mt-2 p-2 border rounded" id="color">
-       <option value="red">
-        Red
-       </option>
-       <option value="blue">
-        Blue
-       </option>
-       <option value="black">
-        Black
-       </option>
-       <option value="white">
-        White
-       </option>
-      </select>
-     </div>
-     <div class="mb-6">
-      <label class="block text-gray-700" for="model">
-       Choose Model:
-      </label>
-      <select class="w-full mt-2 p-2 border rounded" id="model">
-       <option value="standard">
-        Entry Level
-       </option>
-       <option value="midrange">
-        Mid-Range
-       </option>
-       <option value="premium">
-        Premium
-       </option>
-      </select>
-     </div>
-     <div class="mb-6">
-      <label class="block text-gray-700" for="features">
-       Additional Features:
-      </label>
-      <div class="mt-2">
-       <label class="inline-flex items-center">
-        <input class="form-checkbox" type="checkbox" value="sunroof"/>
-        <span class="ml-2">
-         Sunroof
-        </span>
-       </label>
-       <label class="inline-flex items-center ml-6">
-        <input class="form-checkbox" type="checkbox" value="leatherSeats"/>
-        <span class="ml-2">
-         Leather Seats
-        </span>
-       </label>
-       <label class="inline-flex items-center ml-6">
-        <input class="form-checkbox" type="checkbox" value="gps"/>
-        <span class="ml-2">
-         GPS Navigation
-        </span>
-       </label>
-      </div>
-     </div>
-     <div class="mb-6">
-      <label class="block text-gray-700" for="price">
-       Estimated Price:
-      </label>
-      <input class="w-full mt-2 p-2 border rounded" id="price" readonly="" type="text"/>
-     </div>
-     <button class="w-full bg-yellow-500 text-white py-3 rounded-full text-xl hover:bg-yellow-600 transition" type="submit">
-      Calculate Price
-     </button>
-    </form>
-   </div>
-  </section>
-  <!-- Purchasing Page -->
-  <section class="container mx-auto px-6 py-12" id="purchase">
-   <h2 class="text-4xl font-bold text-center text-yellow-500 mb-8">
-    Purchase Your KEVOR eCar
-   </h2>
-   <div class="bg-white p-8 rounded-lg shadow-lg">
-    <form id="purchaseForm">
-     <div class="mb-6">
-      <label class="block text-gray-700" for="name">
-       Full Name:
-      </label>
-      <input class="w-full mt-2 p-2 border rounded" id="name" type="text"/>
-     </div>
-     <div class="mb-6">
-      <label class="block text-gray-700" for="email">
-       Email Address:
-      </label>
-      <input class="w-full mt-2 p-2 border rounded" id="email" type="email"/>
-     </div>
-     <div class="mb-6">
-      <label class="block text-gray-700" for="address">
-       Shipping Address:
-      </label>
-      <input class="w-full mt-2 p-2 border rounded" id="address" type="text"/>
-     </div>
-     <div class="mb-6">
-      <label class="block text-gray-700" for="payment">
-       Payment Method:
-      </label>
-      <select class="w-full mt-2 p-2 border rounded" id="payment">
-       <option value="creditCard">
-        Credit Card
-       </option>
-       <option value="paypal">
-        PayPal
-       </option>
-       <option value="bankTransfer">
-        Bank Transfer
-       </option>
-      </select>
-     </div>
-     <div class="mb-6">
-      <label class="block text-gray-700" for="orderSummary">
-       Order Summary:
-      </label>
-      <textarea class="w-full mt-2 p-2 border rounded" id="orderSummary" readonly=""></textarea>
-     </div>
-     <button class="w-full bg-yellow-500 text-white py-3 rounded-full text-xl hover:bg-yellow-600 transition" type="submit">
-      Complete Purchase
-     </button>
-    </form>
-   </div>
-  </section>
-  <!-- Contact Us/Support Page -->
-  <section class="container mx-auto px-6 py-12" id="contact">
-   <h2 class="text-4xl font-bold text-center text-yellow-500 mb-8">
-    Contact Us
-   </h2>
-   <div class="bg-white p-8 rounded-lg shadow-lg">
-    <form id="contactForm">
-     <div class="mb-6">
-      <label class="block text-gray-700" for="contactName">
-       Full Name:
-      </label>
-      <input class="w-full mt-2 p-2 border rounded" id="contactName" type="text"/>
-     </div>
-     <div class="mb-6">
-      <label class="block text-gray-700" for="contactEmail">
-       Email Address:
-      </label>
-      <input class="w-full mt-2 p-2 border rounded" id="contactEmail" type="email"/>
-     </div>
-     <div class="mb-6">
-      <label class="block text-gray-700" for="message">
-       Message:
-      </label>
-      <textarea class="w-full mt-2 p-2 border rounded" id="message"></textarea>
-     </div>
-     <button class="w-full bg-yellow-500 text-white py-3 rounded-full text-xl hover:bg-yellow-600 transition" type="submit">
-      Send Message
-     </button>
-    </form>
-   </div>
-   <div class="mt-12">
-    <h3 class="text-2xl font-bold text-center text-yellow-500 mb-4">
-     Frequently Asked Questions
-    </h3>
-    <div class="bg-white p-8 rounded-lg shadow-lg">
-     <div class="mb-6">
-      <h4 class="text-xl font-bold text-gray-700">
-       What is the warranty on the KEVOR eCar?
-      </h4>
-      <p class="text-gray-600">
-       The KEVOR eCar comes with a 5-year warranty covering all major components.
-      </p>
-     </div>
-     <div class="mb-6">
-      <h4 class="text-xl font-bold text-gray-700">
-       How long does it take to charge the KEVOR eCar?
-      </h4>
-      <p class="text-gray-600">
-       Charging time varies based on the charger used. A full charge can take between 6 to 12 hours.
-      </p>
-     </div>
-     <div class="mb-6">
-      <h4 class="text-xl font-bold text-gray-700">
-       Can I test drive the KEVOR eCar before purchasing?
-      </h4>
-      <p class="text-gray-600">
-       Yes, you can schedule a test drive at any of our authorized dealerships.
-      </p>
-     </div>
-    </div>
-   </div>
-  </section>
-  <!-- Footer -->
-  <footer class="bg-gray-800 text-white py-6">
-   <div class="container mx-auto px-6 flex justify-between items-center">
-    <p>
-     © 2023 KEVOR. All rights reserved.
-    </p>
-    <div class="flex space-x-4">
-     <a class="hover:text-yellow-500" href="#">
-      <i class="fab fa-facebook-f">
-      </i>
-     </a>
-     <a class="hover:text-yellow-500" href="#">
-      <i class="fab fa-twitter">
-      </i>
-     </a>
-     <a class="hover:text-yellow-500" href="#">
-      <i class="fab fa-instagram">
-      </i>
-     </a>
-     <a class="hover:text-yellow-500" href="#">
-      <i class="fab fa-linkedin-in">
-      </i>
-     </a>
-    </div>
-   </div>
-  </footer>
-  <script>
-   document.getElementById('configForm').addEventListener('submit', function(event) {
+        .fade-in {
+            animation: fadeIn 2s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .slide-in {
+            animation: slideIn 1s ease-in-out;
+        }
+        @keyframes slideIn {
+            from { transform: translateY(100px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-900">
+
+    <!-- Header -->
+    <header class="bg-gray-800 shadow-lg">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#">
+               <img src="logo.png" alt="KEVOR eCar logo" class="w-12 h-12">
+            </a>
+            <nav class="flex space-x-6 items-center">
+                <a href="#" class="text-gray-300 hover:text-yellow-500 transition">Home</a>
+                <a href="#configure" class="text-gray-300 hover:text-yellow-500 transition">Configure</a>
+                <a href="#purchase" class="text-gray-300 hover:text-yellow-500 transition">Purchase</a>
+                <a href="#contact" class="text-gray-300 hover:text-yellow-500 transition">Contact Us</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-bg h-screen flex items-center justify-center text-center text-white fade-in">
+        <div>
+            <h1 class="text-5xl md:text-7xl font-bold">Korean revolution, far beyond evolution</h1>
+            <a href="#configure" class="mt-8 inline-block bg-yellow-500 text-white py-3 px-6 rounded-full text-xl hover:bg-yellow-600 transition transform hover:scale-105">Configure Your KEVOR eCar</a>
+        </div>
+    </section>
+
+    <!-- Configuration Page -->
+    <section id="configure" class="container mx-auto px-6 py-12">
+        <h2 class="text-4xl font-bold text-center text-yellow-500 mb-8 slide-in">Configure Your KEVOR eCar</h2>
+        <div class="bg-gray-100 p-8 rounded-lg shadow-lg slide-in">
+            <form id="configForm">
+                <div class="mb-6">
+                    <label for="color" class="block text-gray-700">Choose Color:</label>
+                    <select id="color" class="w-full mt-2 p-2 border rounded bg-gray-200 text-gray-700">
+                        <option value="red">Red</option>
+                        <option value="blue">Blue</option>
+                        <option value="black">Black</option>
+                        <option value="white">White</option>
+                    </select>
+                </div>
+                <div class="mb-6">
+                    <label for="model" class="block text-gray-700">Choose Model:</label>
+                    <select id="model" class="w-full mt-2 p-2 border rounded bg-gray-200 text-gray-700">
+                        <option value="standard">Entry Level</option>
+                        <option value="midrange">Mid-Range</option>
+                        <option value="premium">Premium</option>
+                    </select>
+                </div>
+                <div class="mb-6">
+                    <label for="features" class="block text-gray-700">Additional Features:</label>
+                    <div class="mt-2">
+                        <label class="inline-flex items-center">
+                            <input type="checkbox" class="form-checkbox bg-gray-200 text-yellow-500" value="sunroof">
+                            <span class="ml-2 text-gray-700">Sunroof</span>
+                        </label>
+                        <label class="inline-flex items-center ml-6">
+                            <input type="checkbox" class="form-checkbox bg-gray-200 text-yellow-500" value="leatherSeats">
+                            <span class="ml-2 text-gray-700">Leather Seats</span>
+                        </label>
+                        <label class="inline-flex items-center ml-6">
+                            <input type="checkbox" class="form-checkbox bg-gray-200 text-yellow-500" value="gps">
+                            <span class="ml-2 text-gray-700">GPS Navigation</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="mb-6">
+                    <label for="price" class="block text-gray-700">Estimated Price:</label>
+                    <input type="text" id="price" class="w-full mt-2 p-2 border rounded bg-gray-200 text-gray-700" readonly>
+                </div>
+                <button type="submit" class="w-full bg-yellow-500 text-white py-3 rounded-full text-xl hover:bg-yellow-600 transition transform hover:scale-105">Calculate Price</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Purchasing Page -->
+    <section id="purchase" class="container mx-auto px-6 py-12">
+        <h2 class="text-4xl font-bold text-center text-yellow-500 mb-8 slide-in">Purchase Your KEVOR eCar</h2>
+        <div class="bg-gray-100 p-8 rounded-lg shadow-lg slide-in">
+            <form id="purchaseForm">
+                <div class="mb-6">
+                    <label for="name" class="block text-gray-700">Full Name:</label>
+                    <input type="text" id="name" class="w-full mt-2 p-2 border rounded bg-gray-200 text-gray-700">
+                </div>
+                <div class="mb-6">
+                    <label for="email" class="block text-gray-700">Email Address:</label>
+                    <input type="email" id="email" class="w-full mt-2 p-2 border rounded bg-gray-200 text-gray-700">
+                </div>
+                <div class="mb-6">
+                    <label for="address" class="block text-gray-700">Shipping Address:</label>
+                    <input type="text" id="address" class="w-full mt-2 p-2 border rounded bg-gray-200 text-gray-700">
+                </div>
+                <div class="mb-6">
+                    <label for="payment" class="block text-gray-700">Payment Method:</label>
+                    <select id="payment" class="w-full mt-2 p-2 border rounded bg-gray-200 text-gray-700">
+                        <option value="creditCard">Credit Card</option>
+                        <option value="paypal">PayPal</option>
+                        <option value="bankTransfer">Bank Transfer</option>
+                    </select>
+                </div>
+                <div class="mb-6">
+                    <label for="orderSummary" class="block text-gray-700">Order Summary:</label>
+                    <textarea id="orderSummary" class="w-full mt-2 p-2 border rounded bg-gray-200 text-gray-700" readonly></textarea>
+                </div>
+                <button type="submit" class="w-full bg-yellow-500 text-white py-3 rounded-full text-xl hover:bg-yellow-600 transition transform hover:scale-105">Complete Purchase</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Contact Us/Support Page -->
+    <section id="contact" class="container mx-auto px-6 py-12">
+        <h2 class="text-4xl font-bold text-center text-yellow-500 mb-8 slide-in">Contact Us</h2>
+        <div class="bg-gray-100 p-8 rounded-lg shadow-lg slide-in">
+            <form id="contactForm">
+                <div class="mb-6">
+                    <label for="contactName" class="block text-gray-700">Full Name:</label>
+                    <input type="text" id="contactName" class="w-full mt-2 p-2 border rounded bg-gray-200 text-gray-700">
+                </div>
+                <div class="mb-6">
+                    <label for="contactEmail" class="block text-gray-700">Email Address:</label>
+                    <input type="email" id="contactEmail" class="w-full mt-2 p-2 border rounded bg-gray-200 text-gray-700">
+                </div>
+                <div class="mb-6">
+                    <label for="message" class="block text-gray-700">Message:</label>
+                    <textarea id="message" class="w-full mt-2 p-2 border rounded bg-gray-200 text-gray-700"></textarea>
+                </div>
+                <button type="submit" class="w-full bg-yellow-500 text-white py-3 rounded-full text-xl hover:bg-yellow-600 transition transform hover:scale-105">Send Message</button>
+            </form>
+        </div>
+        <div class="mt-12">
+            <h3 class="text-2xl font-bold text-center text-yellow-500 mb-4 slide-in">Frequently Asked Questions</h3>
+            <div class="bg-gray-100 p-8 rounded-lg shadow-lg slide-in">
+                <div class="mb-6">
+                    <h4 class="text-xl font-bold text-gray-700">What is the warranty on the KEVOR eCar?</h4>
+                    <p class="text-gray-600">The KEVOR eCar comes with a 5-year warranty covering all major components.</p>
+                </div>
+                <div class="mb-6">
+                    <h4 class="text-xl font-bold text-gray-700">How long does it take to charge the KEVOR eCar?</h4>
+                    <p class="text-gray-600">Charging time varies based on the charger used. A full charge can take between 6 to 12 hours.</p>
+                </div>
+                <div class="mb-6">
+                    <h4 class="text-xl font-bold text-gray-700">Can I test drive the KEVOR eCar before purchasing?</h4>
+                    <p class="text-gray-600">Yes, you can schedule a test drive at any of our authorized dealerships.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-6">
+        <div class="container mx-auto px-6 flex justify-between items-center">
+            <p>&copy; 2023 KEVOR. All rights reserved.</p>
+            <div class="flex space-x-4">
+                <a href="#" class="hover:text-yellow-500 transition"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="hover:text-yellow-500 transition"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="hover:text-yellow-500 transition"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="hover:text-yellow-500 transition"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('configForm').addEventListener('submit', function(event) {
             event.preventDefault();
             const color = document.getElementById('color').value;
             const model = document.getElementById('model').value;
@@ -300,6 +216,6 @@
             const orderSummary = `Name: ${name}\nEmail: ${email}\nAddress: ${address}\nPayment Method: ${payment}\nPrice: ${document.getElementById('price').value}`;
             document.getElementById('orderSummary').value = orderSummary;
         });
-  </script>
- </body>
+    </script>
+</body>
 </html>
